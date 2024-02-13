@@ -1,10 +1,10 @@
 import './styles/App.css';
 import MyButton from './components/UI/button/MyButton';
-import BiographyPage from './components/BiographyPage';
-import PorfolioPage from './components/PortfolioPage';
-import ResumephyPage from './components/ResumePage';
-import VideoPage from './components/VideoPage';
-import ContactsPage from './components/ContactsPage';
+import BiographyPage from './components/Pages/BiographyPage';
+import PorfolioPage from './components/Pages/PortfolioPage';
+import ResumephyPage from './components/Pages/ResumePage';
+import VideoPage from './components/Pages/VideoPage';
+import ContactsPage from './components/Pages/ContactsPage';
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
