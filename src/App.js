@@ -1,18 +1,48 @@
 import './styles/App.css';
 import MyButton from './components/UI/button/MyButton';
+import BiographyPage from './components/BiographyPage';
+import PorfolioPage from './components/PortfolioPage';
+import ResumephyPage from './components/ResumePage';
+import VideoPage from './components/VideoPage';
+import ContactsPage from './components/ContactsPage';
+
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="App_mainTitle">Виктория <br />Волкова</h1>
-      <div className="MyButton">
-        <MyButton>Биография</MyButton>
-        <MyButton>Портфолио</MyButton>
-        <MyButton>Резюме</MyButton>
-        <MyButton>Видео</MyButton>
-        <MyButton>Контакты</MyButton>
+    <BrowserRouter>
+      <div className="App">
+        {/* <h1 className="App_mainTitle">
+          Виктория <br />
+          Волкова
+        </h1> */}
+        <div className="navigation">
+          <Link to="/biography" className='linkButton'>
+            <MyButton>Биография</MyButton>
+          </Link>
+          <Link to="/portfolio" className='linkButton'>
+            <MyButton>Портфолио</MyButton>
+          </Link>
+          <Link to="/resume" className='linkButton'>
+            <MyButton>Резюме</MyButton>
+          </Link>
+          <Link to="/video" className='linkButton'>
+            <MyButton>Видео</MyButton>
+          </Link>
+          <Link to="/contacts" className='linkButton'>
+            <MyButton>Контакты</MyButton>
+          </Link>
+        </div>
+        <Routes>
+          <Route path="/biography" element={<BiographyPage />} />
+          <Route path="/portfolio" element={<PorfolioPage />} />
+          <Route path="/resume" element={<ResumephyPage />} />
+          <Route path="/video" element={<VideoPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
