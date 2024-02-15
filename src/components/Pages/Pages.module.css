@@ -16,11 +16,16 @@
 .pages-content {
   width: 1000px;
   margin: 100px auto;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Caveat', cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
+}
+
+.pages-content a {
+  text-decoration: none;
+  color: bisque;
 }
 
 .container {
@@ -32,6 +37,7 @@
 }
 
 .imageContainer {
+  position: relative;
   width: 50%;
 }
 
@@ -40,3 +46,12 @@
   height: auto;
 }
 
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+  font-size: 134px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.6);
+}

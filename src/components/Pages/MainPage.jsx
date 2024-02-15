@@ -12,8 +12,8 @@ const MainPage = () => {
           alt="Main photo by Victoria"
           className={styles.image}
         />
-        <div className={styles.textOverlay} data-content="Виктория Волкова">
-          Виктория Волкова
+        <div className={styles.textOverlay}>
+          Вик<br />тория Вол<br />кова
         </div>
       </div>
     </div>
