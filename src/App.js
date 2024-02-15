@@ -5,9 +5,9 @@ import PorfolioPage from './components/Pages/PortfolioPage';
 import ResumephyPage from './components/Pages/ResumePage';
 import VideoPage from './components/Pages/VideoPage';
 import ContactsPage from './components/Pages/ContactsPage';
+import MainPage from './components/Pages/MainPage';
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
 
 function App() {
   return (
@@ -18,23 +18,27 @@ function App() {
           Волкова
         </h1> */}
         <div className="navigation">
-          <Link to="/biography" className='linkButton'>
+          <Link to="/main" className="linkButton">
+            <MyButton>Главная</MyButton>
+          </Link>
+          <Link to="/biography" className="linkButton">
             <MyButton>Биография</MyButton>
           </Link>
-          <Link to="/portfolio" className='linkButton'>
+          <Link to="/portfolio" className="linkButton">
             <MyButton>Портфолио</MyButton>
           </Link>
-          <Link to="/resume" className='linkButton'>
+          <Link to="/resume" className="linkButton">
             <MyButton>Резюме</MyButton>
           </Link>
-          <Link to="/video" className='linkButton'>
+          <Link to="/video" className="linkButton">
             <MyButton>Видео</MyButton>
           </Link>
-          <Link to="/contacts" className='linkButton'>
+          <Link to="/contacts" className="linkButton">
             <MyButton>Контакты</MyButton>
           </Link>
         </div>
         <Routes>
+          <Route path="/main" element={<MainPage />} />
           <Route path="/biography" element={<BiographyPage />} />
           <Route path="/portfolio" element={<PorfolioPage />} />
           <Route path="/resume" element={<ResumephyPage />} />

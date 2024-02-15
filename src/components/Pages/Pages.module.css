@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-/* <uniquifier>: Use a uniquifier for the class name
-<weight>: Use a value from 400 to 700 */
-
 .dancing-script {
   text-align: center;
   font-family: 'Dancing Script', cursive;
@@ -25,3 +22,21 @@
   font-style: normal;
   font-size: 24px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.imageContainer {
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
