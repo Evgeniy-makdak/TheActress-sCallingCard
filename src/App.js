@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/App.css';
 import MyButton from './components/UI/button/MyButton';
 import BiographyPage from './components/Pages/BiographyPage';
@@ -6,17 +7,12 @@ import ResumephyPage from './components/Pages/ResumePage';
 import VideoPage from './components/Pages/VideoPage';
 import ContactsPage from './components/Pages/ContactsPage';
 import MainPage from './components/Pages/MainPage';
-
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <h1 className="App_mainTitle">
-          Виктория <br />
-          Волкова
-        </h1> */}
         <div className="navigation">
           <Link to="/main" className="linkButton">
             <MyButton>Главная</MyButton>
@@ -38,6 +34,7 @@ function App() {
           </Link>
         </div>
         <Routes>
+          <Route path="/" element={<Navigate to="/main" />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/biography" element={<BiographyPage />} />
           <Route path="/portfolio" element={<PorfolioPage />} />
