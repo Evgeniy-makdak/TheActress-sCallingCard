@@ -49,9 +49,12 @@
 .textOverlay {
   position: absolute;
   top: 50%;
-  left: 98%;
+  left: 95%;
   transform: translate(-50%, -50%);
-  font-size: 134px;
+  font-size: 8em;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.6);
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(252, 229, 201);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
