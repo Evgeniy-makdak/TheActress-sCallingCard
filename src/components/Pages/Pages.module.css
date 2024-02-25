@@ -49,7 +49,7 @@
 .textOverlay {
   position: absolute;
   top: 50%;
-  left: 95%;
+  left: 85%;
   transform: translate(-50%, -50%);
   font-size: 8em;
   font-weight: 900;
@@ -57,4 +57,18 @@
   -webkit-text-stroke: 2px rgb(252, 229, 201);
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.imageContainer {
+  position: relative;
+  height: 100vh; 
+  width: 100%; 
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  height: 100%;
+  width: auto;
 }

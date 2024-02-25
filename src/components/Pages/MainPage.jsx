@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Pages.module.css';
-import mainPhoto from '../images/Vika_main_page.jpg';
+import mainPhoto from '../images/photos/mainphoto.png';
 
 const MainPage = () => {
   return (
