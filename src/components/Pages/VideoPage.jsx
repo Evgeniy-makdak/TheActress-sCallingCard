@@ -1,11 +1,13 @@
 import React from 'react';
-import styles from './Pages.module.css'
-
+import styles from './Pages.module.css';
+import video from '../videos/Tsvetaeva.mp4';
 
 const VideoPage = () => {
     return (
-        <div>
-            <h2 className={styles['dancing-script']}>Videos</h2>
+        <div className={styles.container}>
+            <video className={styles.video} controls>
+                <source src={video} type="video/mp4" />
+            </video>
         </div>
     );
 };

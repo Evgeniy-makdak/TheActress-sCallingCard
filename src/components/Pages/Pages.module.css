@@ -72,3 +72,11 @@
   height: 100%;
   width: auto;
 }
+
+.video {
+  position: absolute;
+  top: 50;
+  margin: auto auto;
+  height: 40%;
+  width: auto;
+}
