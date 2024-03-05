@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/App.css';
+import styles from './components/Pages/App.module.css'
 import MyButton from './components/UI/button/MyButton';
 import BiographyPage from './components/Pages/BiographyPage';
 import PorfolioPage from './components/Pages/PortfolioPage';
@@ -12,24 +12,24 @@ import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <div className="navigation">
-          <Link to="/main" className="linkButton">
+      <div className={styles.App}>
+        <div className={styles.navigation}>
+          <Link to="/main" className={styles.linkButton}>
             <MyButton>Главная</MyButton>
           </Link>
-          <Link to="/biography" className="linkButton">
+          <Link to="/biography" className={styles.linkButton}>
             <MyButton>Биография</MyButton>
           </Link>
-          <Link to="/portfolio" className="linkButton">
+          <Link to="/portfolio" className={styles.linkButton}>
             <MyButton>Портфолио</MyButton>
           </Link>
-          <Link to="/resume" className="linkButton">
+          <Link to="/resume" className={styles.linkButton}>
             <MyButton>Резюме</MyButton>
           </Link>
-          <Link to="/video" className="linkButton">
+          <Link to="/video" className={styles.linkButton}>
             <MyButton>Видео</MyButton>
           </Link>
-          <Link to="/contacts" className="linkButton">
+          <Link to="/contacts" className={styles.linkButton}>
             <MyButton>Контакты</MyButton>
           </Link>
         </div>
