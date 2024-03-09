@@ -108,18 +108,11 @@
   }
 
   .imageContainer {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    opacity: 0.7;
+    display: none;
   }
 
   .image {
-    position: absolute;
-    top: 10%;
-    left: -100%;
-    width: 150%;
-    height: auto;
+    display: none;
   }
 
   .textOverlay {

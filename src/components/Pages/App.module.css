@@ -26,5 +26,15 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
+  .App {
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/photos/mainphoto.png');
+    background-size: cover;
+    background-position: center;
+    color: bisque;
+  }
 }
+

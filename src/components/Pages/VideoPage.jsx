@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Pages.module.css';
 import video from '../videos/Tsvetaeva.mp4';
 

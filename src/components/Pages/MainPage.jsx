@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Pages.module.css';
 import mainPhoto from '../images/photos/mainphoto.png';
 

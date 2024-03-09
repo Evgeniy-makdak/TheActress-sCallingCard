@@ -1,4 +1,3 @@
-import React from 'react';
 import './BurgerMenu.css';
 
 const BurgerMenu = ({ isOpen, toggleMenu }) => {

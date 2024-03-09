@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './components/Pages/App.module.css'
 import MyButton from './components/UI/button/MyButton';
 import BiographyPage from './components/Pages/BiographyPage';
