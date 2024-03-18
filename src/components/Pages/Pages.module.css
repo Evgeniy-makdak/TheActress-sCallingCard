@@ -6,7 +6,7 @@
 
 .dancing-script {
   text-align: center;
-  font-family: "PT Serif", serif;
+  font-family: 'PT Serif', serif;
   font-weight: 700;
   font-style: italic;
   font-size: 48px;
@@ -62,8 +62,23 @@
   width: auto;
 }
 
+.container {
+  margin: 20px;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.videoPlayer {
+  margin-top: 20px;
+}
+
 .titles {
-  font-family: "PT Serif", serif;
+  font-family: 'PT Serif', serif;
   font-weight: 400;
   font-style: italic;
   color: azure;
@@ -71,7 +86,7 @@
 }
 
 .article {
-  font-family: "PT Serif", serif;
+  font-family: 'PT Serif', serif;
   font-weight: 400;
   font-style: italic;
   color: azure;
@@ -95,12 +110,13 @@
     z-index: 999;
   }
 
-  .imageContainer {
-    display: none;
-  }
-
   .image {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    opacity: 0.5; 
   }
 
   .textOverlay {

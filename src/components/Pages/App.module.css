@@ -26,11 +26,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .App {
-    background-image: url('../images/photos/mainphoto.png');
-    background-size: cover;
-    background-position: center;
-    margin: 50% auto;
+  .navigation {
+    display: none;
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .navigation {
+    display: flex;
+  }
+}

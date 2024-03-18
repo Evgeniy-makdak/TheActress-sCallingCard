@@ -1,18 +1,27 @@
-import styles from './components/Pages/App.module.css'
-import MyButton from './components/UI/button/MyButton';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
+import BurgerMenu from './components/Pages/BurgerMenu';
+import MainPage from './components/Pages/MainPage';
 import BiographyPage from './components/Pages/BiographyPage';
 import PorfolioPage from './components/Pages/PortfolioPage';
 import ResumephyPage from './components/Pages/ResumePage';
 import VideoPage from './components/Pages/VideoPage';
 import ContactsPage from './components/Pages/ContactsPage';
-import MainPage from './components/Pages/MainPage';
-import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
+import MyButton from './components/UI/button/MyButton';
+import styles from './components/Pages/App.module.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <BrowserRouter>
       <div className={styles.App}>
-        <div className={styles.navigation}>
+        <BurgerMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        <div className={isMenuOpen ? `${styles.navigation} ${styles.open}` : styles.navigation}>
           <Link to="/main" className={styles.linkButton}>
             <MyButton>Главная</MyButton>
           </Link>
