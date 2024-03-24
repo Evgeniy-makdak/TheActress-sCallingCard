@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 import BurgerMenu from './components/Pages/BurgerMenu';
 import MainPage from './components/Pages/MainPage';
@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
       <div className={styles.App}>
         <BurgerMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
-        <div className={isMenuOpen ? `${styles.navigation} ${styles.open}` : styles.navigation}>
+        <div className={`${styles.navigation} ${isMenuOpen ? styles.open : ''}`}>
           <Link to="/main" className={styles.linkButton}>
             <MyButton>Главная</MyButton>
           </Link>

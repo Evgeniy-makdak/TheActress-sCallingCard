@@ -19,9 +19,3 @@
 .myButton:hover {
   transform: scale(1.3);
 }
-
-@media only screen and (min-width: 600px) {
-  .myButton {
-    display: flex;
-  }
-}

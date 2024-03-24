@@ -36,3 +36,8 @@
     display: flex;
   }
 }
+
+.open {
+  display: block;
+  transform: translateX(0);
+}
