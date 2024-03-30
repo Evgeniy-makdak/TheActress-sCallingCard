@@ -1,16 +1,25 @@
 import { Link } from 'react-router-dom';
-import MyButton from '../UI/button/MyButton';
-import styles from '../Pages/App.module.css'; 
-import './BurgerMenu.css';
+import MyButton from './UI/button/MyButton';
+import styles from './BurgerMenu.module.css';
 
-const BurgerMenu = ({ isOpen, toggleMenu }) => {
+const BurgerMenu = ({ isOpen, setMenuState }) => {
+  const classes = [styles["burger-menu"]]
+
+  if (isOpen) {
+    classes.push(styles["open"])
+  }
+
+  const handleClick = () => {
+    setMenuState(prev => !prev)
+  }
+
   return (
-    <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-      <div className="burger-menu-line"></div>
-      <div className="burger-menu-line"></div>
-      <div className="burger-menu-line"></div>
+    <div className={classes.join(' ')} onClick={handleClick}>
+      <div className={styles["burger-menu-line"]}></div>
+      <div className={styles["burger-menu-line"]}></div>
+      <div className={styles["burger-menu-line"]}></div>
       {isOpen && (
-        <div className="burger-menu-links">
+        <div className={styles["burger-menu-links"]}>
           <Link to="/main" className={styles.linkButton}><MyButton>Главная</MyButton></Link>
           <Link to="/biography" className={styles.linkButton}><MyButton>Биография</MyButton></Link>
           <Link to="/portfolio" className={styles.linkButton}><MyButton>Портфолио</MyButton></Link>

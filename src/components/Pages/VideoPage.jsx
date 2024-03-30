@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import styles from './Pages.module.css';
-import VideoIcon from './VideoIcon';
-import video1 from '../videos/Tsvetaeva.mp4';
+import styles from './styles/VideoPage.module.css';
+import VideoIcon from '../VideoIcon';
+import video1 from '../../assets/videos/Tsvetaeva.mp4';
 // import video2 from '../videos/your_video.mp4'; // Добавьте пути к вашим видео
 
 const VideoPage = () => {

@@ -1,0 +1,49 @@
+.video {
+    position: absolute;
+    top: 50;
+    margin: auto auto;
+    height: 40%;
+    width: auto;
+}
+
+.container {
+    margin: 20px;
+    width: 100%;
+}
+
+.videoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.videoPlayer {
+    margin-top: 20px;
+    video {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .container {
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+}

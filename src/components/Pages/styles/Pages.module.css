@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Original Version, splitted into modules */
 
 .dancing-script {
   text-align: center;

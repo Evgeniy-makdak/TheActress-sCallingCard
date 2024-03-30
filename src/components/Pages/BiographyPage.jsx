@@ -1,8 +1,8 @@
-import styles from './Pages.module.css';
+import styles from './styles/BiographyPage.module.css'
 
 const BiographyPage = () => {
   return (
-    <div>
+    <div className={styles['page']}>
       <h2 className={styles['dancing-script']}>Биография</h2>
       <p className={styles['pages-content']}>
         <h2 className={styles.titles}>Виктория Волкова родилась 30 июня 2009 года в городе Новосибирске</h2>

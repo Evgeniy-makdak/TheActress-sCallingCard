@@ -1,8 +1,8 @@
-import styles from './Pages.module.css'
+import styles from './styles/ContactsPage.module.css'
 
 const ContactsPage = () => {
   return (
-    <div>
+    <div className={styles['page']}>
       <h2 className={styles['dancing-script']}>Contacts</h2>
       <p className={styles['pages-content']}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non

@@ -1,0 +1,107 @@
+.imageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.textOverlay {
+    position: absolute;
+    font-size: 8em;
+    font-weight: 900;
+    margin-top: -200px;
+    margin-left: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(252, 229, 201);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .imageContainer {
+        padding: 50px 20px;
+        justify-content: center;
+        align-items: start;
+    }
+    .image {
+        opacity: 0.8;
+        margin-right: -100px;
+    }
+    .textOverlay {
+        color: rgb(252, 229, 201);
+        text-shadow: rgba(0, 0, 0, .9) 3px 0 20px;
+        text-align: center;
+        -webkit-text-stroke: 0;
+        position: relative;
+        margin-top: 0;
+        font-size: 64px;
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .imageContainer {
+        padding: 50px 20px;
+        justify-content: center;
+        align-items: start;
+    }
+    .image {
+        opacity: 0.8;
+        margin-right: -100px;
+    }
+    .textOverlay {
+        color: rgb(252, 229, 201);
+        text-shadow: rgba(0, 0, 0, .9) 3px 0 20px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 96px;
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .imageContainer {
+        padding: 50px 20px;
+        justify-content: center;
+        align-items: start;
+    }
+    .image {
+        opacity: 0.8;
+    }
+    .textOverlay {
+        color: rgb(252, 229, 201);
+        text-shadow: rgba(0, 0, 0, .9) 3px 0 20px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 102px;
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .imageContainer {
+        padding: 50px 20px;
+        justify-content: center;
+        align-items: start;
+    }
+    .textOverlay {
+        color: rgb(252, 229, 201);
+        text-shadow: rgba(0, 0, 0, .9) 3px 0 20px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 102px;
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+    .textOverlay {
+        font-size: 108px;
+    }
+}

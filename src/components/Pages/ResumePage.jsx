@@ -1,8 +1,8 @@
-import styles from './Pages.module.css';
+import styles from './styles/ResumePage.module.css';
 
 const ResumePage = () => {
   return (
-    <div>
+    <div className={styles['page']}>
       <h2 className={styles['dancing-script']}>Resume</h2>
       <p className={styles['pages-content']}>
         Образование: <br />

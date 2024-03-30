@@ -1,8 +1,8 @@
-import styles from './Pages.module.css'
+import styles from './styles/PortfolioPage.module.css'
 
 const PortfolioPage = () => {
     return (
-        <div>
+        <div className={styles['page']}>
             <h2 className={styles['dancing-script']}>My Porfolio</h2>
         </div>
     );
