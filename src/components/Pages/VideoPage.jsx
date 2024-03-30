@@ -2,7 +2,10 @@ import {useState} from 'react';
 import styles from './styles/VideoPage.module.css';
 import VideoIcon from '../VideoIcon';
 import video1 from '../../assets/videos/Tsvetaeva.mp4';
-// import video2 from '../videos/your_video.mp4'; // Добавьте пути к вашим видео
+// import video2 from '../videos/your_video.mp4'; // Добавьте пути к видео
+// import video3 from '../videos/your_video.mp4'; // Добавьте пути к видео
+// import video4 from '../videos/your_video.mp4'; // Добавьте пути к видео
+// import video5 from '../videos/your_video.mp4'; // Добавьте пути к видео
 
 const VideoPage = () => {
     const [currentVideo, setCurrentVideo] = useState(null);
@@ -10,7 +13,9 @@ const VideoPage = () => {
     const videos = [
       { src: video1, title: 'Конкурс чтецов памяти М.Цветаевой' },
     //   { src: video2, title: 'Video 2' },
-      // Добавьте другие видео при необходимости
+    //   { src: video3, title: 'Video 3' },
+    //   { src: video4, title: 'Video 4' },
+    //   { src: video5, title: 'Video 5' },
     ];
   
     const handleVideoClick = (src) => {
