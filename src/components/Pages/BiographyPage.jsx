@@ -1,4 +1,5 @@
 import styles from './styles/BiographyPage.module.css'
+import mainPhoto from '../../assets/images/mainphoto.png';
 
 const BiographyPage = () => {
   return (
@@ -12,6 +13,11 @@ const BiographyPage = () => {
           Пройдя конкурсный отбор, поступает на театральное отделение детской школы искусств имени Рахманинова.
         </article>
       </p>
+      <img
+          src={mainPhoto}
+          alt="Main photo by Victoria"
+          className={styles.image}
+      />
     </div>
   );
 };

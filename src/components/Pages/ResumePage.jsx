@@ -1,4 +1,5 @@
 import styles from './styles/ResumePage.module.css';
+import mainPhoto from '../../assets/images/mainphoto.png';
 
 const ResumePage = () => {
   return (
@@ -11,6 +12,11 @@ const ResumePage = () => {
           С.В.Рахманинова"
         </a> <br /> 2018 г. - настоящее время <br /> Театральное отделение.
       </p>
+      <img
+          src={mainPhoto}
+          alt="Main photo by Victoria"
+          className={styles.image}
+      />
     </div>
   );
 };

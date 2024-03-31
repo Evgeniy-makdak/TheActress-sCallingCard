@@ -1,4 +1,5 @@
 import styles from './styles/ContactsPage.module.css'
+import mainPhoto from '../../assets/images/mainphoto.png';
 
 const ContactsPage = () => {
   return (
@@ -11,6 +12,11 @@ const ContactsPage = () => {
         corrupti accusantium vero? Quibusdam repellat architecto maiores,
         necessitatibus perferendis nostrum atque.
       </p>
+      <img
+          src={mainPhoto}
+          alt="Main photo by Victoria"
+          className={styles.image}
+      />
     </div>
   );
 };

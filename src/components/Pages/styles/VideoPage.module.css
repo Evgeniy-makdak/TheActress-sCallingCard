@@ -1,3 +1,9 @@
+.page {
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+}
+
 .video {
     position: absolute;
     top: 50;
@@ -6,9 +12,21 @@
     width: auto;
 }
 
+.image {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    height: 100%;
+    width: auto;
+    opacity: 0.8;
+    z-index: 1;
+}
+
 .container {
-    margin: 20px;
+    margin: 20px 0;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .videoGrid {
@@ -19,6 +37,8 @@
 }
 
 .videoPlayer {
+    width: 100%;
+    max-width: 100%;
     margin-top: 20px;
     video {
         max-width: 100%;
@@ -29,20 +49,32 @@
     .container {
         margin-top: 50px;
     }
+    .image {
+        display: none;
+    }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     .container {
         margin-top: 50px;
+    }
+    .image {
+        display: none;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     .container {
         margin-top: 50px;
     }
+    .image {
+        display: none;
+    }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     .container {
         margin-top: 50px;
+    }
+    .image {
+        display: none;
     }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
