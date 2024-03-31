@@ -1,4 +1,3 @@
-// import styles from './Pages.module.css';
 import mainPhoto from '../../assets/images/mainphoto.png';
 import styles from './styles/MainPage.module.css'
 
