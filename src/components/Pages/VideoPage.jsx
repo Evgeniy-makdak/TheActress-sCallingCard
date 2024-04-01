@@ -1,22 +1,17 @@
 import { useState } from 'react';
 import styles from './styles/VideoPage.module.css';
 import VideoIcon from '../VideoIcon';
-import video1 from '../../assets/videos/Tsvetaeva.mp4';
 import mainPhoto from '../../assets/images/mainphoto.png';
-// import video2 from '../videos/your_video.mp4'; // Добавьте пути к видео
-// import video3 from '../videos/your_video.mp4'; // Добавьте пути к видео
-// import video4 from '../videos/your_video.mp4'; // Добавьте пути к видео
-// import video5 from '../videos/your_video.mp4'; // Добавьте пути к видео
 
 const VideoPage = () => {
   const [currentVideo, setCurrentVideo] = useState(null);
 
   const videos = [
-    { src: video1, title: 'Конкурс чтецов памяти М.Цветаевой' },
-    //   { src: video2, title: 'Video 2' },
-    //   { src: video3, title: 'Video 3' },
-    //   { src: video4, title: 'Video 4' },
-    //   { src: video5, title: 'Video 5' },
+    { src: 'https://www.youtube.com/embed/4WMrKVST0Hk', title: 'Пиковая дама' },
+    {
+      src: require('../../assets/videos/Tsvetaeva.mp4'),
+      title: 'Конкурс чтецов памяти М.Цветаевой',
+    },
   ];
 
   const handleVideoClick = (src) => {
@@ -38,18 +33,25 @@ const VideoPage = () => {
         </div>
         {currentVideo && (
           <div className={styles.videoPlayer}>
-            <video controls autoPlay>
-              <source src={currentVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {typeof currentVideo === 'string' ? (
+              <iframe
+                title="YouTube Video"
+                src={currentVideo}
+                style={{ border: 'none' }}
+                allowFullScreen
+                width="100%"
+                height="100%"
+              ></iframe>
+            ) : (
+              <video controls autoPlay width="100%">
+                <source src={currentVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
         )}
       </div>
-      <img
-        src={mainPhoto}
-        alt="Main photo by Victoria"
-        className={styles.image}
-      />
+      <img src={mainPhoto} alt="Main photo" className={styles.image} />
     </div>
   );
 };
