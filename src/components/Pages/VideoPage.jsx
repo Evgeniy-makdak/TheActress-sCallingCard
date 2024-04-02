@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './styles/VideoPage.module.css';
-import VideoIcon from '../VideoIcon';
 import mainPhoto from '../../assets/images/mainphoto.png';
 
 const VideoPage = () => {
@@ -8,14 +7,18 @@ const VideoPage = () => {
 
   const videos = [
     { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
-    {
-      src: require('../../assets/videos/Tsvetaeva.mp4'),
-      title: 'Конкурс чтецов памяти М.Цветаевой',
-    },
+    { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
+    { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
+    { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
+    // Добавьте другие видео в этот массив по аналогии
   ];
 
   const handleVideoClick = (src) => {
     setCurrentVideo(src);
+  };
+
+  const handleWatchClick = (src) => {
+    window.open(src, '_blank');
   };
 
   return (
@@ -23,12 +26,20 @@ const VideoPage = () => {
       <div className={styles.container}>
         <div className={styles.videoGrid}>
           {videos.map((video, index) => (
-            <VideoIcon
+            <div
               key={index}
-              src={video.src}
-              title={video.title}
-              onClick={handleVideoClick}
-            />
+              className={styles.videoCard}
+              onClick={() => handleVideoClick(video.src)}
+            >
+              <img
+                src={`https://img.youtube.com/vi/${video.src
+                  .split('/')
+                  .pop()}/0.jpg`}
+                alt={video.title}
+              />
+              <div className={styles.videoTitle}>{video.title}</div>
+              <div className={styles.videoLink} onClick={() => handleWatchClick(video.src)}>Смотреть</div>
+            </div>
           ))}
         </div>
         {currentVideo && (

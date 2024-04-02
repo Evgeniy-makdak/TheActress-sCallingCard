@@ -4,16 +4,6 @@
     position: relative;
 }
 
-.dancing-script {
-    text-align: center;
-    font-family: 'PT Serif', serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 48px;
-    position: relative;
-    z-index: 2;
-}
-
 .image {
     position: absolute;
     top: 0;
