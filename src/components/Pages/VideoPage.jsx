@@ -7,7 +7,7 @@ const VideoPage = () => {
   const [currentVideo, setCurrentVideo] = useState(null);
 
   const videos = [
-    { src: 'https://www.youtube.com/embed/4WMrKVST0Hk', title: 'Пиковая дама' },
+    { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
     {
       src: require('../../assets/videos/Tsvetaeva.mp4'),
       title: 'Конкурс чтецов памяти М.Цветаевой',
