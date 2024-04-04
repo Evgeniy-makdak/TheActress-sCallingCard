@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Navigation from './components/Navigation';
 import MainPage from './components/Pages/MainPage';
 import BiographyPage from './components/Pages/BiographyPage';
-import PorfolioPage from './components/Pages/PortfolioPage';
-import ResumephyPage from './components/Pages/ResumePage';
+import PortfolioPage from './components/Pages/PortfolioPage'; 
+import ResumePage from './components/Pages/ResumePage'; 
 import VideoPage from './components/Pages/VideoPage';
 import ContactsPage from './components/Pages/ContactsPage';
 import styles from './styles/App.module.css';
@@ -13,21 +13,22 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <Router> 
       <div className={styles.App}>
-        <Navigation isMenuOpen={isMenuOpen} setMenuState={setIsMenuOpen} />
+        <Navigation isMenuOpen={isMenuOpen} setMenuState={setIsMenuOpen}/>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/biography" element={<BiographyPage />} />
-          <Route path="/portfolio" element={<PorfolioPage />} />
-          <Route path="/resume" element={<ResumephyPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/resume" element={<ResumePage />} />
           <Route path="/video" element={<VideoPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
 export default App;
+

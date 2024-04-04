@@ -15,7 +15,7 @@
     bottom: 0;
     background: rgba(0, 0, 0, .6);
     position: absolute;
-    justify-content: start;
+    justify-content: flex-start;
     display: flex!important;
     transform: translateX(0);
     align-items: center;
