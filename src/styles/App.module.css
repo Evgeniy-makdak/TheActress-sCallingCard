@@ -5,6 +5,7 @@
   height: 100vh;
   background: linear-gradient(90deg, rgb(38, 38, 38), rgb(143, 141, 141));
   color: bisque;
+  overflow-y: auto;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {

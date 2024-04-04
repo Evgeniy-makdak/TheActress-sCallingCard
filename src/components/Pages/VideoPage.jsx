@@ -24,23 +24,30 @@ const VideoPage = () => {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.videoGrid}>
-          {videos.map((video, index) => (
-            <div
-              key={index}
-              className={styles.videoCard}
-              onClick={() => handleVideoClick(video.src)}
-            >
-              <img
-                src={`https://img.youtube.com/vi/${video.src
-                  .split('/')
-                  .pop()}/0.jpg`}
-                alt={video.title}
-              />
-              <div className={styles.videoTitle}>{video.title}</div>
-              <div className={styles.videoLink} onClick={() => handleWatchClick(video.src)}>Смотреть</div>
-            </div>
-          ))}
+        <div className={styles.videoGridContainer}>
+          <div className={styles.videoGrid}>
+            {videos.map((video, index) => (
+              <div
+                key={index}
+                className={styles.videoCard}
+                onClick={() => handleVideoClick(video.src)}
+              >
+                <img
+                  src={`https://img.youtube.com/vi/${video.src
+                    .split('/')
+                    .pop()}/0.jpg`}
+                  alt={video.title}
+                />
+                <div className={styles.videoTitle}>{video.title}</div>
+                <div
+                  className={styles.videoLink}
+                  onClick={() => handleWatchClick(video.src)}
+                >
+                  Смотреть
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
         {currentVideo && (
           <div className={styles.videoPlayer}>
