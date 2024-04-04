@@ -7,7 +7,7 @@ const VideoPage = () => {
 
   const videos = [
     { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
-    { src: 'https://youtu.be/amyG_FqsvQE', title: '"Молитва". М.Цветаева' },
+    { src: 'https://youtu.be/amyG_FqsvQE', title: '"Молитва" М.Цветаева' },
     { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
     { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
     // Добавьте другие видео в этот массив по аналогии
@@ -36,7 +36,7 @@ const VideoPage = () => {
                   src={`https://img.youtube.com/vi/${video.src
                     .split('/')
                     .pop()}/0.jpg`}
-                  alt={video.title}
+                  alt=""
                 />
                 <div className={styles.videoTitle}>{video.title}</div>
                 <div
@@ -69,7 +69,7 @@ const VideoPage = () => {
           </div>
         )}
       </div>
-      <img src={mainPhoto} alt="Main photo" className={styles.image} />
+      <img src={mainPhoto} alt="" className={styles.image} />
     </div>
   );
 };
