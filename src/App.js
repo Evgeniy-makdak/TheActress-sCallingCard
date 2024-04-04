@@ -15,9 +15,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className={styles.App}>
-        <Navigation isMenuOpen={isMenuOpen} setMenuState={setIsMenuOpen}/>
+        <Navigation isMenuOpen={isMenuOpen} setMenuState={setIsMenuOpen} />
         <Routes>
-          <Route path="/" element={<Navigate to="/main" />} />
+          <Route path="/" element={<MainPage />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/biography" element={<BiographyPage />} />
           <Route path="/portfolio" element={<PorfolioPage />} />
