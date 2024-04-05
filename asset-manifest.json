@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/TheActress-sCallingCard/static/css/main.beb4557c.css",
+    "main.css": "/TheActress-sCallingCard/static/css/main.ff316d6b.css",
     "main.js": "/TheActress-sCallingCard/static/js/main.acc6e7a5.js",
     "static/media/mainphoto.png": "/TheActress-sCallingCard/static/media/mainphoto.6c3f4cf607b945b15155.png",
     "index.html": "/TheActress-sCallingCard/index.html",
-    "main.beb4557c.css.map": "/TheActress-sCallingCard/static/css/main.beb4557c.css.map",
+    "main.ff316d6b.css.map": "/TheActress-sCallingCard/static/css/main.ff316d6b.css.map",
     "main.acc6e7a5.js.map": "/TheActress-sCallingCard/static/js/main.acc6e7a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.beb4557c.css",
+    "static/css/main.ff316d6b.css",
     "static/js/main.acc6e7a5.js"
   ]
 }
