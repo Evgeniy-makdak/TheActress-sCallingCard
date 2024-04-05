@@ -38,14 +38,11 @@
         margin-right: -100px;
     }
     .textOverlay {
-        color: rgb(252, 229, 201);
         text-align: center;
-        -webkit-text-stroke: 0;
-        font-weight: 900;
-        position: relative;
-        margin-top: 0;
-        font-size: 64px;
+        margin-top: 20vh;
+        font-size: 102px;
         margin-left: 0;
+        opacity: 0.5;
     }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -60,9 +57,10 @@
     }
     .textOverlay {
         text-align: center;
-        margin-top: 0;
-        font-size: 96px;
+        margin-top: 20vh;
+        font-size: 102px;
         margin-left: 0;
+        opacity: 0.5;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -76,9 +74,10 @@
     }
     .textOverlay {
         text-align: center;
-        margin-top: 0;
+        margin-top: 20vh;
         font-size: 102px;
         margin-left: 0;
+        opacity: 0.5;
     }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
@@ -89,9 +88,10 @@
     }
     .textOverlay {
         text-align: center;
-        margin-top: 0;
+        margin-top: 20vh;
         font-size: 102px;
         margin-left: 0;
+        opacity: 0.5;
     }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
