@@ -1,5 +1,5 @@
 import styles from './styles/BiographyPage.module.css';
-import mainPhoto from '../../assets/images/mainphoto.png';
+import byographyphoto from '../../assets/images/byographyphoto-min.png'
 
 const BiographyPage = () => {
   return (
@@ -37,8 +37,8 @@ const BiographyPage = () => {
         </div>
       </p>
       <img
-        src={mainPhoto}
-        alt="Main photo by Victoria"
+        src={byographyphoto}
+        alt="byographyphoto by Victoria"
         className={styles.image}
       />
     </div>

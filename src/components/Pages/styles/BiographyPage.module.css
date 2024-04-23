@@ -1,4 +1,5 @@
 .page {
+    display: flex;
     width: 100%;
     padding: 0 20px;
     position: relative;
@@ -7,17 +8,17 @@
 .image {
     position: absolute;
     top: 0;
-    right: 4%;
+    left: 4%;
     height: 100%;
     width: auto;
-    opacity: 0.8;
     z-index: 1;
 }
 
 .pages-content {
     width: 100%;
     max-width: 1000px;
-    margin: 100px auto;
+    margin-top: 100px;
+    margin-left: 600px;
     font-family: 'Caveat', cursive;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -39,7 +40,7 @@
     text-wrap: wrap;
     padding: 20px; 
     border-radius: 5px;
-    background: linear-gradient(90deg, rgb(45, 44, 44), rgb(97, 96, 96));
+    background: linear-gradient(90deg, rgb(109, 109, 109), rgb(160, 160, 160));
 }
 
 .articleBorder {

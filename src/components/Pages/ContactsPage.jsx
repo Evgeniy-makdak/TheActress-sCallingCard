@@ -1,5 +1,5 @@
 import styles from './styles/ContactsPage.module.css';
-import mainPhoto from '../../assets/images/mainphoto.png';
+import mainPhoto from '../../assets/images/mainphoto-min.png';
 
 const ContactsPage = () => {
   return (

@@ -1,4 +1,4 @@
-import mainPhoto from '../../assets/images/mainphoto.png';
+import mainPhoto from '../../assets/images/mainphoto-min.png';
 import styles from './styles/MainPage.module.css'
 
 const MainPage = () => {

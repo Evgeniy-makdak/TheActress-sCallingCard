@@ -1,5 +1,5 @@
 import styles from './styles/ResumePage.module.css';
-import mainPhoto from '../../assets/images/mainphoto.png';
+import mainPhoto from '../../assets/images/byographyphoto-min.png';
 
 const ResumePage = () => {
   return (

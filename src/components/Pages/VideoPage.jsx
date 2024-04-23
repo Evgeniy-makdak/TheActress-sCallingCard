@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './styles/VideoPage.module.css';
-import mainPhoto from '../../assets/images/mainphoto.png';
+import mainPhoto from '../../assets/images/mainphoto-min.png';
 
 const VideoPage = () => {
   const [currentVideo, setCurrentVideo] = useState(null);
