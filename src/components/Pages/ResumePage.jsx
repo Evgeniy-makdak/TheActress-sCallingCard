@@ -1,5 +1,5 @@
 import styles from './styles/ResumePage.module.css';
-import mainPhoto from '../../assets/images/byographyphoto-min.png';
+import byographyphoto from '../../assets/images/byographyphoto-min.png';
 
 const ResumePage = () => {
   return (
@@ -22,8 +22,8 @@ const ResumePage = () => {
         </div>
       </p>
       <img
-        src={mainPhoto}
-        alt="Main photo by Victoria"
+        src={byographyphoto}
+        alt="byographyphoto by Victoria"
         className={styles.image}
       />
     </div>
