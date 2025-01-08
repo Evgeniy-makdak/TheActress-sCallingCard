@@ -6,19 +6,18 @@ const VideoPage = () => {
   const [currentVideo, setCurrentVideo] = useState(null);
 
   const videos = [
-    { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
-    { src: 'https://youtu.be/amyG_FqsvQE', title: '"Молитва" М.Цветаева' },
-    { src: 'https://youtu.be/2jkXkHB8DbA', title: '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"' },
-    { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
+    { src: 'yzuiKpUkAjA', title: 'Пиковая дама' },
+    { src: 'amyG_FqsvQE', title: '"Молитва" М.Цветаева' },
+    { src: '2jkXkHB8DbA', title: '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"' },
     // Добавьте другие видео в этот массив по аналогии
   ];
 
-  const handleVideoClick = (src) => {
-    setCurrentVideo(src);
+  const handleVideoClick = (id) => {
+    setCurrentVideo(id);
   };
 
-  const handleWatchClick = (src) => {
-    window.open(src, '_blank');
+  const handleWatchClick = (id) => {
+    window.open(`https://youtu.be/${id}`, '_blank');
   };
 
   return (
@@ -33,15 +32,16 @@ const VideoPage = () => {
                 onClick={() => handleVideoClick(video.src)}
               >
                 <img
-                  src={`https://img.youtube.com/vi/${video.src
-                    .split('/')
-                    .pop()}/0.jpg`}
+                  src={`https://img.youtube.com/vi/${video.src}/0.jpg`}
                   alt=""
                 />
                 <div className={styles.videoTitle}>{video.title}</div>
                 <div
                   className={styles.videoLink}
-                  onClick={() => handleWatchClick(video.src)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleWatchClick(video.src);
+                  }}
                 >
                   Смотреть
                 </div>
@@ -51,21 +51,14 @@ const VideoPage = () => {
         </div>
         {currentVideo && (
           <div className={styles.videoPlayer}>
-            {typeof currentVideo === 'string' ? (
-              <iframe
-                title="YouTube Video"
-                src={currentVideo}
-                style={{ border: 'none' }}
-                allowFullScreen
-                width="100%"
-                height="100%"
-              ></iframe>
-            ) : (
-              <video controls autoPlay width="100%">
-                <source src={currentVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            )}
+            <iframe
+              title="YouTube Video"
+              src={`https://www.youtube.com/embed/${currentVideo}`}
+              style={{ border: 'none' }}
+              allowFullScreen
+              width="100%"
+              height="100%"
+            ></iframe>
           </div>
         )}
       </div>
