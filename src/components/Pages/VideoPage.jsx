@@ -8,7 +8,7 @@ const VideoPage = () => {
   const videos = [
     { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
     { src: 'https://youtu.be/amyG_FqsvQE', title: '"Молитва" М.Цветаева' },
-    { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
+    { src: 'https://youtu.be/2jkXkHB8DbA', title: '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"' },
     { src: 'https://youtu.be/yzuiKpUkAjA', title: 'Пиковая дама' },
     // Добавьте другие видео в этот массив по аналогии
   ];
