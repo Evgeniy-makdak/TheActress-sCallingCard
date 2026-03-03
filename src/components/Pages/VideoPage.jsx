@@ -1,14 +1,17 @@
-import { useState } from 'react';
-import styles from './styles/VideoPage.module.css';
-import mainPhoto from '../../assets/images/mainphoto.png';
+import { useState } from "react";
+import styles from "./styles/VideoPage.module.css";
+import mainPhoto from "../../assets/images/mainphoto.png";
 
 const VideoPage = () => {
   const [currentVideo, setCurrentVideo] = useState(null);
 
   const videos = [
-    { src: 'yzuiKpUkAjA', title: 'Пиковая дама' },
-    { src: 'amyG_FqsvQE', title: '"Молитва" М.Цветаева' },
-    { src: '2jkXkHB8DbA', title: '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"' },
+    { src: "yzuiKpUkAjA", title: "Пиковая дама" },
+    { src: "amyG_FqsvQE", title: '"Молитва" М.Цветаева' },
+    {
+      src: "2jkXkHB8DbA",
+      title: '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"',
+    },
     // Добавьте другие видео в этот массив по аналогии
   ];
 
@@ -17,7 +20,7 @@ const VideoPage = () => {
   };
 
   const handleWatchClick = (id) => {
-    window.open(`https://youtu.be/${id}`, '_blank');
+    window.open(`https://youtu.be/${id}`, "_blank");
   };
 
   return (
@@ -54,7 +57,7 @@ const VideoPage = () => {
             <iframe
               title="YouTube Video"
               src={`https://www.youtube.com/embed/${currentVideo}`}
-              style={{ border: 'none' }}
+              style={{ border: "none" }}
               allowFullScreen
               width="100%"
               height="100%"

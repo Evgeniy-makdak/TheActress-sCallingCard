@@ -1,21 +1,21 @@
-import { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; 
-import Navigation from './components/Navigation';
-import MainPage from './components/Pages/MainPage';
-import BiographyPage from './components/Pages/BiographyPage';
-import PortfolioPage from './components/Pages/PortfolioPage'; 
-import ResumePage from './components/Pages/ResumePage'; 
-import VideoPage from './components/Pages/VideoPage';
-import ContactsPage from './components/Pages/ContactsPage';
-import styles from './styles/App.module.css';
+import { useState } from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import MainPage from "./components/Pages/MainPage";
+import BiographyPage from "./components/Pages/BiographyPage";
+import PortfolioPage from "./components/Pages/PortfolioPage";
+import ResumePage from "./components/Pages/ResumePage";
+import VideoPage from "./components/Pages/VideoPage";
+import ContactsPage from "./components/Pages/ContactsPage";
+import styles from "./styles/App.module.css";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <Router> 
+    <Router>
       <div className={styles.App}>
-        <Navigation isMenuOpen={isMenuOpen} setMenuState={setIsMenuOpen}/>
+        <Navigation isMenuOpen={isMenuOpen} setMenuState={setIsMenuOpen} />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/main" element={<MainPage />} />
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-

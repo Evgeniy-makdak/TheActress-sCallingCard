@@ -1,11 +1,11 @@
-import styles from './styles/BiographyPage.module.css';
+import styles from "./styles/BiographyPage.module.css";
 // TODO: заменить на byographyphoto.png, когда файл будет добавлен
-import byographyphoto from '../../assets/images/mainphoto.png'
+import byographyphoto from "../../assets/images/mainphoto.png";
 
 const BiographyPage = () => {
   return (
-    <div className={styles['page']}>
-      <p className={styles['pages-content']}>
+    <div className={styles["page"]}>
+      <p className={styles["pages-content"]}>
         <div className={styles.articleBorder}>
           <article className={styles.article}>
             Виктория родилась в 2009 году в Новосибирске.
@@ -14,7 +14,7 @@ const BiographyPage = () => {
             на детских театральных конкурсах, получает первые призы. В 2019
             году, пройдя конкурсный отбор, поступает на театральное отделение
             <a href="https://rahmaninovschool.spb.ru" target="blank">
-              {' '}
+              {" "}
               детской школы искусств имени Рахманинова
             </a>
             . За годы учёбы в ней проявляет себя как творческая личность,
@@ -24,14 +24,20 @@ const BiographyPage = () => {
             Главной ведьмы в спектакле "Маленькая ведьма", поставленном по
             сказочной повести немецкого писателя Отфида Пройслера "Маленькая
             колдунья". Спектакль прошёл с большим успехом. В марте 2024 года
-            Вика наравне с преподавателями учиствовала в спектакле <a href="https://youtu.be/yzuiKpUkAjA" target='blank'>"Пиковая
-            дама"</a> , поставящённого 225-летию со дня рождения А. С. Пушкина. Показ
+            Вика наравне с преподавателями учиствовала в спектакле{" "}
+            <a href="https://youtu.be/yzuiKpUkAjA" target="blank">
+              "Пиковая дама"
+            </a>{" "}
+            , поставящённого 225-летию со дня рождения А. С. Пушкина. Показ
             спектакля состоялся в ТЮЗе.
             <br />
             Интересы Вики не ограничиваются театральной деятельностью. В течение
             двух лет она занималась бразильским джиу-джитсу в известной во всём
-            мире школе <a href="https://gbarra.ru" target='blank'>" Грейси-Барра "</a>,
-            прошла аттестацию на серо-белый пояс.
+            мире школе{" "}
+            <a href="https://gbarra.ru" target="blank">
+              " Грейси-Барра "
+            </a>
+            , прошла аттестацию на серо-белый пояс.
             <br />
             Увлечение английским языком ...
           </article>

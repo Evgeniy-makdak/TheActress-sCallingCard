@@ -1,128 +1,128 @@
 .page {
-    display: flex;
-    width: 100%;
-    padding: 0 20px;
-    position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
 }
 
 .image {
-    position: absolute;
-    top: 0;
-    left: 4%;
-    height: 100%;
-    width: auto;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 4%;
+  height: 100%;
+  width: auto;
+  z-index: 1;
 }
 
 .pages-content {
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 100px;
-    margin-left: 600px;
-    font-family: 'Caveat', cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    z-index: 2;
-    position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 100px;
+  margin-left: 600px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  z-index: 2;
+  position: relative;
 }
 
 .article {
-    font-family: 'PT Serif', serif;
-    font-weight: 400;
-    font-style: italic;
-    color: azure;
-    font-size: 14px;
-    max-width: 500px;
-    width: 100%;
-    margin-top: 30px;
-    text-wrap: wrap;
-    padding: 20px; 
-    border-radius: 5px;
-    background: linear-gradient(90deg, rgb(109, 109, 109), rgb(160, 160, 160));
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: azure;
+  font-size: 14px;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 30px;
+  text-wrap: wrap;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgb(109, 109, 109), rgb(160, 160, 160));
 }
 
 .articleBorder {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .article a {
-    text-decoration: none;
-    color: bisque;
+  text-decoration: none;
+  color: bisque;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
-    .page {
-        margin-top: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .pages-content {
-        margin: 0;
-        width: 100%;
-    }
-    .article {
-        font-size: 14px;
-    }
-    .image {
-        display: none;
-    }
+  .page {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .pages-content {
+    margin: 0;
+    width: 100%;
+  }
+  .article {
+    font-size: 14px;
+  }
+  .image {
+    display: none;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-    .page {
-        margin-top: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .pages-content {
-        max-width: 100%;
-        margin: 0;
-        width: 100%;
-    }
-    .article {
-        max-width: 100%;
-    }
-    .image {
-        display: none;
-    }
+  .page {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .pages-content {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  .article {
+    max-width: 100%;
+  }
+  .image {
+    display: none;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .page {
-        margin-top: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .pages-content {
-        max-width: 100%;
-        margin: 0;
-        width: 100%;
-    }
-    .article {
-        max-width: 100%;
-    }
-    .image {
-        display: none;
-    }
+  .page {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .pages-content {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  .article {
+    max-width: 100%;
+  }
+  .image {
+    display: none;
+  }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    .page {
-        margin-top: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .pages-content {
-        max-width: 100%;
-        margin: 0;
-        width: 100%;
-    }
-    .article {
-        font-size: 16px;
-        max-width: 600px;
-    }
-    .image {
-        display: none;
-    }
+  .page {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .pages-content {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  .article {
+    font-size: 16px;
+    max-width: 600px;
+  }
+  .image {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
 }

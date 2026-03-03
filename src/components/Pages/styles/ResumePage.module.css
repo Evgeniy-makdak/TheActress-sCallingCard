@@ -7,7 +7,7 @@
 
 .dancing-script {
   text-align: center;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 700;
   font-style: italic;
   font-size: 48px;
@@ -34,7 +34,7 @@
   max-width: 1000px;
   margin-top: 100px;
   margin-left: 600px;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -44,7 +44,7 @@
 }
 
 .article {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
   color: azure;
@@ -133,7 +133,7 @@
   .article {
     font-size: 16px;
     max-width: 600px;
-}
+  }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
 }

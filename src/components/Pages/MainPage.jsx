@@ -1,5 +1,5 @@
-import mainPhoto from '../../assets/images/mainphoto.png';
-import styles from './styles/MainPage.module.css'
+import mainPhoto from "../../assets/images/mainphoto.png";
+import styles from "./styles/MainPage.module.css";
 
 const MainPage = () => {
   return (
@@ -11,7 +11,8 @@ const MainPage = () => {
           className={styles.image}
         />
         <div className={styles.textOverlay}>
-          Виктория<br /> Волкова
+          Виктория
+          <br /> Волкова
         </div>
       </div>
     </>

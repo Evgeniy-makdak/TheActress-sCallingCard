@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   top: 20px;
-  left: 20px; 
+  left: 20px;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -35,15 +35,15 @@
 }
 
 .burger-menu-links {
-  display: none; 
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  width: 100%; 
+  width: 100%;
 }
 
-.burger-menu-links.open { 
+.burger-menu-links.open {
   display: flex;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .burger-menu-link:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
@@ -85,5 +85,4 @@
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
-
 }

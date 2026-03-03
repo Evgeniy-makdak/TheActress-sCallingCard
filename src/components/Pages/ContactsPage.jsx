@@ -1,10 +1,10 @@
-import styles from './styles/ContactsPage.module.css';
-import mainPhoto from '../../assets/images/mainphoto.png';
+import styles from "./styles/ContactsPage.module.css";
+import mainPhoto from "../../assets/images/mainphoto.png";
 
 const ContactsPage = () => {
   return (
-    <div className={styles['page']}>
-      <p className={styles['pages-content']}>
+    <div className={styles["page"]}>
+      <p className={styles["pages-content"]}>
         <div className={styles.articleBorder}>
           <article className={styles.article}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur

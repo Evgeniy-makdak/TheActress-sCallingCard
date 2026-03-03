@@ -1,9 +1,9 @@
-import styles from './styles/PortfolioPage.module.css';
-import mainPhoto from '../../assets/images/mainphoto.png';
+import styles from "./styles/PortfolioPage.module.css";
+import mainPhoto from "../../assets/images/mainphoto.png";
 
 const PortfolioPage = () => {
   return (
-    <div className={styles['page']}>
+    <div className={styles["page"]}>
       <img
         src={mainPhoto}
         alt="Main photo by Victoria"
