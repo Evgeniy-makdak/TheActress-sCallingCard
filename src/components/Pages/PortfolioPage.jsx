@@ -1,5 +1,5 @@
 import styles from './styles/PortfolioPage.module.css';
-import mainPhoto from '../../assets/images/mainphoto-min.png';
+import mainPhoto from '../../assets/images/mainphoto.png';
 
 const PortfolioPage = () => {
   return (

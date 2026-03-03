@@ -1,3 +1,8 @@
 node_modules/
 build/
 .DS_Store
+
+# Переменные окружения (секреты, API-ключи)
+.env
+.env.local
+.env.*.local

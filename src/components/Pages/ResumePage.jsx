@@ -1,5 +1,6 @@
 import styles from './styles/ResumePage.module.css';
-import byographyphoto from '../../assets/images/byographyphoto-min.png';
+// TODO: заменить на byographyphoto.png, когда файл будет добавлен
+import byographyphoto from '../../assets/images/mainphoto.png';
 
 const ResumePage = () => {
   return (
