@@ -13,11 +13,19 @@ const ResumePage = () => {
               СПб ГБУ ДО "Санкт-Петербургская детская школа искусств им.
               С.В.Рахманинова"
             </a>{" "}
-            <br /> 2018 г. - настоящее время <br /> Театральное отделение.
+            <br /> 2018 г. - 2025 г.
+            <br /> Театральное отделение.
           </article>
         </div>
         <div className={styles.articleBorder}>
-          <article className={styles.article}>Следующий пункт резюме</article>
+          <article className={styles.article}>
+            Образование: <br />
+            <a href="https://spbdshi3.ru/" target="blank">
+              СПб ГБУ ДО ''Санкт-Петербургская детская школа искусств N 3"
+            </a>{" "}
+            <br /> 2025 г. - настоящее время.
+            <br /> Театральное отделение.
+          </article>
         </div>
       </p>
       <img

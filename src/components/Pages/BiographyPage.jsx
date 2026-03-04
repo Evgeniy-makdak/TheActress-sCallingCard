@@ -1,6 +1,7 @@
 import styles from "./styles/BiographyPage.module.css";
 // TODO: заменить на byographyphoto.png, когда файл будет добавлен
 import byographyphoto from "../../assets/images/mainphoto.png";
+import placesInSoty from "../../assets/images/placesInSoty.png";
 
 const BiographyPage = () => {
   return (
@@ -29,7 +30,27 @@ const BiographyPage = () => {
               "Пиковая дама"
             </a>{" "}
             , поставящённого 225-летию со дня рождения А. С. Пушкина. Показ
-            спектакля состоялся в ТЮЗе.
+            спектакля состоялся в ТЮЗе. В марте 2026 г. состоялась премьера
+            коммерческого показа "Пиковой Дамы" на{" "}
+            <a
+              href="https://teatralinayploshadkasoty.tilda.ws/pikdama"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              театральной площадке "Соты"
+            </a>
+            .
+            Постановка вызвала достаточно большой интерес у зрителей. Достаточно
+            сказать, что было продано более 80% билетов, что в 5 раз превышает
+            продажи на аналогичные спектакли!{" "}
+            <a
+              href={placesInSoty}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              За три дня до премьеры наполняемость зала выглядела так
+            </a>
+            .
             <br />
             Интересы Вики не ограничиваются театральной деятельностью. В течение
             двух лет она занималась бразильским джиу-джитсу в известной во всём
