@@ -1,26 +1,31 @@
-import { useState } from "react";
 import styles from "./styles/VideoPage.module.css";
 import mainPhoto from "../../assets/images/mainphoto.png";
+import thumbnailQueenOfSpades from "../../assets/images/TheQueenOfSpades.jpg";
+import thumbnailPrayer from "../../assets/images/Prayer.png";
+import thumbnailLittleWitch from "../../assets/images/TheLittleWitch.png";
 
 const VideoPage = () => {
-  const [currentVideo, setCurrentVideo] = useState(null);
-
   const videos = [
-    { src: "yzuiKpUkAjA", title: "Пиковая дама" },
-    { src: "amyG_FqsvQE", title: '"Молитва" М.Цветаева' },
+    {
+      src: "yzuiKpUkAjA",
+      title: "Пиковая дама",
+      thumbnail: thumbnailQueenOfSpades,
+    },
+    {
+      src: "amyG_FqsvQE",
+      title: '"Молитва" М.Цветаева',
+      thumbnail: thumbnailPrayer,
+    },
     {
       src: "2jkXkHB8DbA",
       title: '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"',
+      thumbnail: thumbnailLittleWitch,
+      thumbnailClass: "thumbnailLittleWitch",
     },
-    // Добавьте другие видео в этот массив по аналогии
   ];
 
-  const handleVideoClick = (id) => {
-    setCurrentVideo(id);
-  };
-
-  const handleWatchClick = (id) => {
-    window.open(`https://youtu.be/${id}`, "_blank");
+  const openInNewWindow = (id) => {
+    window.open(`https://youtu.be/${id}`, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -32,38 +37,19 @@ const VideoPage = () => {
               <div
                 key={index}
                 className={styles.videoCard}
-                onClick={() => handleVideoClick(video.src)}
+                onClick={() => openInNewWindow(video.src)}
               >
                 <img
-                  src={`https://img.youtube.com/vi/${video.src}/0.jpg`}
-                  alt=""
+                  src={video.thumbnail}
+                  alt={video.title}
+                  className={video.thumbnailClass ? styles[video.thumbnailClass] : undefined}
                 />
                 <div className={styles.videoTitle}>{video.title}</div>
-                <div
-                  className={styles.videoLink}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleWatchClick(video.src);
-                  }}
-                >
-                  Смотреть
-                </div>
+                <div className={styles.videoLink}>Смотреть</div>
               </div>
             ))}
           </div>
         </div>
-        {currentVideo && (
-          <div className={styles.videoPlayer}>
-            <iframe
-              title="YouTube Video"
-              src={`https://www.youtube.com/embed/${currentVideo}`}
-              style={{ border: "none" }}
-              allowFullScreen
-              width="100%"
-              height="100%"
-            ></iframe>
-          </div>
-        )}
       </div>
       <img src={mainPhoto} alt="" className={styles.image} />
     </div>

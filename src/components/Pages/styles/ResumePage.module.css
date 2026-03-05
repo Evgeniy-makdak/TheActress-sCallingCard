@@ -21,11 +21,12 @@
 }
 
 .image {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 4%;
-  height: 100%;
+  left: 18%;
+  height: 100vh;
   width: auto;
+  object-fit: contain;
   z-index: 1;
 }
 
@@ -136,4 +137,13 @@
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1800px) {
+  .page {
+    padding-left: 280px;
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  .page {
+    padding-left: 280px;
+  }
 }
