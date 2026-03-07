@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9cefe2d6.css",
-    "main.js": "/static/js/main.38b386e6.js",
-    "static/media/mainphoto.png": "/static/media/mainphoto.6c3f4cf607b945b15155.png",
-    "static/media/TheLittleWitch.png": "/static/media/TheLittleWitch.3ef5b5c2d3a5b683c4f6.png",
-    "static/media/Prayer.png": "/static/media/Prayer.0ba25a935edad78f92d4.png",
-    "static/media/placesInSoty.png": "/static/media/placesInSoty.adedbef3979df1061f81.png",
-    "static/media/TheQueenOfSpades.jpg": "/static/media/TheQueenOfSpades.a3ed6958b8ffc573c48f.jpg",
-    "index.html": "/index.html",
-    "main.9cefe2d6.css.map": "/static/css/main.9cefe2d6.css.map",
-    "main.38b386e6.js.map": "/static/js/main.38b386e6.js.map"
+    "main.css": "./static/css/main.9cefe2d6.css",
+    "main.js": "./static/js/main.b3462c2f.js",
+    "static/media/mainphoto.png": "./static/media/mainphoto.6c3f4cf607b945b15155.png",
+    "static/media/TheLittleWitch.png": "./static/media/TheLittleWitch.3ef5b5c2d3a5b683c4f6.png",
+    "static/media/Prayer.png": "./static/media/Prayer.0ba25a935edad78f92d4.png",
+    "static/media/placesInSoty.png": "./static/media/placesInSoty.adedbef3979df1061f81.png",
+    "static/media/TheQueenOfSpades.jpg": "./static/media/TheQueenOfSpades.a3ed6958b8ffc573c48f.jpg",
+    "index.html": "./index.html",
+    "main.9cefe2d6.css.map": "./static/css/main.9cefe2d6.css.map",
+    "main.b3462c2f.js.map": "./static/js/main.b3462c2f.js.map"
   },
   "entrypoints": [
     "static/css/main.9cefe2d6.css",
-    "static/js/main.38b386e6.js"
+    "static/js/main.b3462c2f.js"
   ]
 }
