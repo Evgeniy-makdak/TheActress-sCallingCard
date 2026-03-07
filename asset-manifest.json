@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c796c514.css",
+    "main.css": "/static/css/main.9cefe2d6.css",
     "main.js": "/static/js/main.38b386e6.js",
     "static/media/mainphoto.png": "/static/media/mainphoto.6c3f4cf607b945b15155.png",
     "static/media/TheLittleWitch.png": "/static/media/TheLittleWitch.3ef5b5c2d3a5b683c4f6.png",
@@ -8,11 +8,11 @@
     "static/media/placesInSoty.png": "/static/media/placesInSoty.adedbef3979df1061f81.png",
     "static/media/TheQueenOfSpades.jpg": "/static/media/TheQueenOfSpades.a3ed6958b8ffc573c48f.jpg",
     "index.html": "/index.html",
-    "main.c796c514.css.map": "/static/css/main.c796c514.css.map",
+    "main.9cefe2d6.css.map": "/static/css/main.9cefe2d6.css.map",
     "main.38b386e6.js.map": "/static/js/main.38b386e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c796c514.css",
+    "static/css/main.9cefe2d6.css",
     "static/js/main.38b386e6.js"
   ]
 }
