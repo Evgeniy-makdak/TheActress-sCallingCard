@@ -17,7 +17,7 @@ const ContactsPage = () => {
       </p>
       <img
         src={mainPhoto}
-        alt="Main photo by Victoria"
+        alt="Виктория Волкова"
         className={styles.image}
       />
     </div>

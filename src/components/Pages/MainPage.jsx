@@ -3,11 +3,11 @@ import styles from "./styles/MainPage.module.css";
 
 const MainPage = () => {
   return (
-    <>
+    <div className={styles.page}>
       <div className={styles.imageContainer}>
         <img
           src={mainPhoto}
-          alt="Main photo by Victoria"
+          alt="Виктория Волкова"
           className={styles.image}
         />
         <div className={styles.textOverlay}>
@@ -15,7 +15,7 @@ const MainPage = () => {
           <br /> Волкова
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

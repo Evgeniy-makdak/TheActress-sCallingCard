@@ -30,7 +30,7 @@ const ResumePage = () => {
       </p>
       <img
         src={byographyphoto}
-        alt="byographyphoto by Victoria"
+        alt="Виктория Волкова"
         className={styles.image}
       />
     </div>

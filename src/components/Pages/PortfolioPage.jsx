@@ -6,7 +6,7 @@ const PortfolioPage = () => {
     <div className={styles["page"]}>
       <img
         src={mainPhoto}
-        alt="Main photo by Victoria"
+        alt="Виктория Волкова"
         className={styles.image}
       />
     </div>

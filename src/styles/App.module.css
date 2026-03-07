@@ -5,6 +5,13 @@
   height: 100vh;
   background: linear-gradient(90deg, rgb(38, 38, 38), rgb(143, 141, 141));
   color: bisque;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainContent {
+  position: relative;
+  padding-bottom: 60px;
   overflow-y: auto;
 }
 
