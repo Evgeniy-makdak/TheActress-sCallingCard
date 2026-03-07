@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/TheActress-sCallingCard/static/css/main.ff316d6b.css",
-    "main.js": "/TheActress-sCallingCard/static/js/main.acc6e7a5.js",
-    "static/media/mainphoto.png": "/TheActress-sCallingCard/static/media/mainphoto.6c3f4cf607b945b15155.png",
-    "index.html": "/TheActress-sCallingCard/index.html",
-    "main.ff316d6b.css.map": "/TheActress-sCallingCard/static/css/main.ff316d6b.css.map",
-    "main.acc6e7a5.js.map": "/TheActress-sCallingCard/static/js/main.acc6e7a5.js.map"
+    "main.css": "/static/css/main.c796c514.css",
+    "main.js": "/static/js/main.38b386e6.js",
+    "static/media/mainphoto.png": "/static/media/mainphoto.6c3f4cf607b945b15155.png",
+    "static/media/TheLittleWitch.png": "/static/media/TheLittleWitch.3ef5b5c2d3a5b683c4f6.png",
+    "static/media/Prayer.png": "/static/media/Prayer.0ba25a935edad78f92d4.png",
+    "static/media/placesInSoty.png": "/static/media/placesInSoty.adedbef3979df1061f81.png",
+    "static/media/TheQueenOfSpades.jpg": "/static/media/TheQueenOfSpades.a3ed6958b8ffc573c48f.jpg",
+    "index.html": "/index.html",
+    "main.c796c514.css.map": "/static/css/main.c796c514.css.map",
+    "main.38b386e6.js.map": "/static/js/main.38b386e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff316d6b.css",
-    "static/js/main.acc6e7a5.js"
+    "static/css/main.c796c514.css",
+    "static/js/main.38b386e6.js"
   ]
 }
