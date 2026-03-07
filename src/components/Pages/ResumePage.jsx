@@ -1,36 +1,38 @@
 import styles from "./styles/ResumePage.module.css";
-// TODO: заменить на byographyphoto.png, когда файл будет добавлен
 import byographyphoto from "../../assets/images/mainphoto.png";
+import { useLanguage, translations } from "../../context/LanguageContext";
 
 const ResumePage = () => {
+  const { language } = useLanguage();
+  const t = translations[language].resumePage;
   return (
     <div className={styles["page"]}>
       <p className={styles["pages-content"]}>
         <div className={styles.articleBorder}>
           <article className={styles.article}>
-            Образование: <br />
-            <a href="https://rahmaninovschool.spb.ru" target="blank">
+            {t.education} <br />
+            <a href="https://rahmaninovschool.spb.ru" target="_blank" rel="noopener noreferrer">
               СПб ГБУ ДО "Санкт-Петербургская детская школа искусств им.
               С.В.Рахманинова"
             </a>{" "}
-            <br /> 2018 г. - 2025 г.
-            <br /> Театральное отделение.
+            <br /> {t.years}
+            <br /> {t.theaterDept}
           </article>
         </div>
         <div className={styles.articleBorder}>
           <article className={styles.article}>
-            Образование: <br />
-            <a href="https://spbdshi3.ru/" target="blank">
-              СПб ГБУ ДО ''Санкт-Петербургская детская школа искусств N 3"
+            {t.education} <br />
+            <a href="https://spbdshi3.ru/" target="_blank" rel="noopener noreferrer">
+              СПб ГБУ ДО "Санкт-Петербургская детская школа искусств N 3"
             </a>{" "}
-            <br /> 2025 г. - настоящее время.
-            <br /> Театральное отделение.
+            <br /> {t.untilNow}
+            <br /> {t.theaterDept}
           </article>
         </div>
       </p>
       <img
         src={byographyphoto}
-        alt="Виктория Волкова"
+        alt={translations[language].alt}
         className={styles.image}
       />
     </div>

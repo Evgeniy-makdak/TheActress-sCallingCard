@@ -1,72 +1,55 @@
 import styles from "./styles/BiographyPage.module.css";
-// TODO: заменить на byographyphoto.png, когда файл будет добавлен
 import byographyphoto from "../../assets/images/mainphoto.png";
 import placesInSoty from "../../assets/images/placesInSoty.png";
+import { useLanguage, translations } from "../../context/LanguageContext";
+
+const renderWithBreaks = (str) =>
+  str.split("\n").map((line, i) => (
+    <span key={i}>
+      {line}
+      {i < str.split("\n").length - 1 && <br />}
+    </span>
+  ));
 
 const BiographyPage = () => {
+  const { language } = useLanguage();
+  const t = translations[language].biographyPage;
   return (
     <div className={styles["page"]}>
       <p className={styles["pages-content"]}>
         <div className={styles.articleBorder}>
           <article className={styles.article}>
-            Виктория родилась в 2009 году в Новосибирске.
-            <br /> В 2013 году вместе с родителями переезжает в Санкт-Петербург.
-            <br /> С раннего возраста начинает интересоваться театром, выступает
-            на детских театральных конкурсах, получает первые призы. В 2019
-            году, пройдя конкурсный отбор, поступает на театральное отделение
-            <a href="https://rahmaninovschool.spb.ru" target="blank">
-              {" "}
-              детской школы искусств имени Рахманинова
+            {renderWithBreaks(t.text)}
+            <a href="https://rahmaninovschool.spb.ru" target="_blank" rel="noopener noreferrer">
+              {t.rahmaninovLink}
             </a>
-            . За годы учёбы в ней проявляет себя как творческая личность,
-            успешно участвует в конкурсе чтецов, спектаклях, шефских концертах
-            для ветеранов. В 2023 году впервые выступила на настоящей сцене
-            в ТЮЗе, затем - в Большом Театре Кукол. Ей была доверена роль
-            Главной ведьмы в спектакле "Маленькая ведьма", поставленном по
-            сказочной повести немецкого писателя Отфида Пройслера "Маленькая
-            колдунья". Спектакль прошёл с большим успехом. В марте 2024 года
-            Вика наравне с преподавателями учиствовала в спектакле{" "}
-            <a href="https://youtu.be/yzuiKpUkAjA" target="blank">
-              "Пиковая дама"
-            </a>{" "}
-            , поставящённого 225-летию со дня рождения А. С. Пушкина. Показ
-            спектакля состоялся в ТЮЗе. В марте 2026 г. состоялась премьера
-            коммерческого показа "Пиковой Дамы" на{" "}
+            {t.text2}
+            <a href="https://youtu.be/yzuiKpUkAjA" target="_blank" rel="noopener noreferrer">
+              {t.queenOfSpades}
+            </a>
+            {t.text3}
             <a
               href="https://teatralinayploshadkasoty.tilda.ws/pikdama"
               target="_blank"
               rel="noopener noreferrer"
             >
-              театральной площадке "Соты"
+              {t.sotyLink}
             </a>
-            .
-            Постановка вызвала достаточно большой интерес у зрителей. Достаточно
-            сказать, что было продано более 80% билетов, что в 5 раз превышает
-            продажи на аналогичные спектакли!{" "}
-            <a
-              href={placesInSoty}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              За три дня до премьеры наполняемость зала выглядела так
+            {t.text4}
+            <a href={placesInSoty} target="_blank" rel="noopener noreferrer">
+              {t.hallLink}
             </a>
-            .
-            <br />
-            Интересы Вики не ограничиваются театральной деятельностью. В течение
-            двух лет она занималась бразильским джиу-джитсу в известной во всём
-            мире школе{" "}
-            <a href="https://gbarra.ru" target="blank">
-              " Грейси-Барра "
+            {t.text5}
+            <a href="https://gbarra.ru" target="_blank" rel="noopener noreferrer">
+              {t.gracieLink}
             </a>
-            , прошла аттестацию на серо-белый пояс.
-            <br />
-            Увлечение английским языком ...
+            {renderWithBreaks(t.text6)}
           </article>
         </div>
       </p>
       <img
         src={byographyphoto}
-        alt="Виктория Волкова"
+        alt={translations[language].alt}
         className={styles.image}
       />
     </div>

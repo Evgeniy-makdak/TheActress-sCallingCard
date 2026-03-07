@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { LanguageProvider, useLanguage, translations } from "./context/LanguageContext";
 import Navigation from "./components/Navigation";
+import LanguageToggle from "./components/LanguageToggle";
 import MainPage from "./components/Pages/MainPage";
 import BiographyPage from "./components/Pages/BiographyPage";
 import PortfolioPage from "./components/Pages/PortfolioPage";
@@ -10,10 +12,10 @@ import VideoPage from "./components/Pages/VideoPage";
 import ContactsPage from "./components/Pages/ContactsPage";
 import appStyles from "./styles/App.module.css";
 
-function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const copyrightFooter = (
+function CopyrightFooter() {
+  const { language } = useLanguage();
+  const t = translations[language];
+  return (
     <footer
       style={{
         position: "fixed",
@@ -28,13 +30,18 @@ function App() {
         zIndex: 9999,
       }}
     >
-      © 2024-{new Date().getFullYear()} Все права защищены
+      © 2024-{new Date().getFullYear()} {t.copyright}
     </footer>
   );
+}
+
+function AppContent() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       <Router>
+        <LanguageToggle />
         <div className={appStyles.App}>
           <Navigation isMenuOpen={menuOpen} setMenuState={setMenuOpen} />
           <div className={appStyles.mainContent}>
@@ -50,8 +57,16 @@ function App() {
           </div>
         </div>
       </Router>
-      {createPortal(copyrightFooter, document.body)}
+      {createPortal(<CopyrightFooter />, document.body)}
     </>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }
 
