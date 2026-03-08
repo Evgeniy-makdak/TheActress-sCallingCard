@@ -1,5 +1,5 @@
 import styles from "./styles/ResumePage.module.css";
-import byographyphoto from "../../assets/images/mainphoto.png";
+import resumeImage from "../../assets/images/resume.jpg";
 import { useLanguage, translations } from "../../context/LanguageContext";
 
 const ResumePage = () => {
@@ -31,7 +31,7 @@ const ResumePage = () => {
         </div>
       </p>
       <img
-        src={byographyphoto}
+        src={resumeImage}
         alt={translations[language].alt}
         className={styles.image}
       />

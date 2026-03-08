@@ -1,5 +1,5 @@
 import styles from "./styles/BiographyPage.module.css";
-import byographyphoto from "../../assets/images/mainphoto.png";
+import biographyImage from "../../assets/images/byography.jpg";
 import placesInSoty from "../../assets/images/placesInSoty.png";
 import { useLanguage, translations } from "../../context/LanguageContext";
 
@@ -48,7 +48,7 @@ const BiographyPage = () => {
         </div>
       </p>
       <img
-        src={byographyphoto}
+        src={biographyImage}
         alt={translations[language].alt}
         className={styles.image}
       />
