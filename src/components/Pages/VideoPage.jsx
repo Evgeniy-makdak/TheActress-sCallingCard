@@ -66,7 +66,7 @@ const VideoPage = () => {
 
   const scrollNext = useCallback(() => {
     setSelectedIndex((i) => Math.min(videos.length - 1, i + 1));
-  }, []);
+  }, [videos.length]);
 
   const handleWheel = useCallback(
     (e) => {
