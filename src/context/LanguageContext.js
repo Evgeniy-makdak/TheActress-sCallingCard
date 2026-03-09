@@ -26,9 +26,12 @@ export const translations = {
     },
     videoPage: {
       watch: "Смотреть",
+      prevVideo: "Предыдущее видео",
+      nextVideo: "Следующее видео",
       queenOfSpades: "Пиковая дама",
       prayer: '"Молитва" М.Цветаева',
-      littleWitch: '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"',
+      littleWitch:
+        '"Маленькая ведьма" по мотивам О.Пройслера "Маленькая волшебница"',
     },
     resumePage: {
       education: "Образование:",
@@ -50,7 +53,8 @@ export const translations = {
       text5: `.
 Интересы Вики не ограничиваются театральной деятельностью. В течение двух лет она занималась бразильским джиу-джитсу в известной во всём мире школе `,
       gracieLink: '" Грейси-Барра "',
-      text6: ", прошла аттестацию на серо-белый пояс.\nУвлечение английским языком ...",
+      text6:
+        ", прошла аттестацию на серо-белый пояс.\nУвлечение английским языком ...",
     },
     contactsPage: {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non laborum impedit, dicta porro recusandae incidunt fugit minima pariatur dignissimos et explicabo necessitatibus totam repellendus, soluta corrupti accusantium vero? Quibusdam repellat architecto maiores, necessitatibus perferendis nostrum atque.",
@@ -73,9 +77,12 @@ export const translations = {
     },
     videoPage: {
       watch: "Watch",
+      prevVideo: "Previous video",
+      nextVideo: "Next video",
       queenOfSpades: "The Queen of Spades",
       prayer: '"Prayer" by M. Tsvetaeva',
-      littleWitch: '"The Little Witch" based on O. Preussler\'s "The Little Witch"',
+      littleWitch:
+        '"The Little Witch" based on O. Preussler\'s "The Little Witch"',
     },
     resumePage: {
       education: "Education:",
@@ -93,11 +100,13 @@ From an early age, she became interested in theater, performed at children's the
       text3: `, dedicated to the 225th anniversary of A. S. Pushkin's birth. The performance was shown at the Youth Theater. In March 2026, the premiere of the commercial performance of "The Queen of Spades" took place at `,
       sotyLink: 'the "Soty" theater venue',
       text4: `. The production aroused considerable interest among the audience. Suffice it to say that more than 80% of tickets were sold, which is 5 times higher than sales for similar performances! `,
-      hallLink: "Three days before the premiere, the hall occupancy looked like this",
+      hallLink:
+        "Three days before the premiere, the hall occupancy looked like this",
       text5: `.
 Vika's interests are not limited to theatrical activities. For two years she practiced Brazilian jiu-jitsu at the world-famous `,
       gracieLink: '"Gracie Barra"',
-      text6: " school, and received her gray-white belt certification.\nPassion for the English language ...",
+      text6:
+        " school, and received her gray-white belt certification.\nPassion for the English language ...",
     },
     contactsPage: {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non laborum impedit, dicta porro recusandae incidunt fugit minima pariatur dignissimos et explicabo necessitatibus totam repellendus, soluta corrupti accusantium vero? Quibusdam repellat architecto maiores, necessitatibus perferendis nostrum atque.",

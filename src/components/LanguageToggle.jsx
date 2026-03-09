@@ -10,7 +10,9 @@ const LanguageToggle = () => {
       className={styles.toggle}
       onClick={toggleLanguage}
       title={language === "ru" ? "Switch to English" : "Переключить на русский"}
-      aria-label={language === "ru" ? "Switch to English" : "Переключить на русский"}
+      aria-label={
+        language === "ru" ? "Switch to English" : "Переключить на русский"
+      }
     >
       {language === "ru" ? "EN" : "RU"}
     </button>

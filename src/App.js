@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { LanguageProvider, useLanguage, translations } from "./context/LanguageContext";
+import {
+  LanguageProvider,
+  useLanguage,
+  translations,
+} from "./context/LanguageContext";
 import Navigation from "./components/Navigation";
 import LanguageToggle from "./components/LanguageToggle";
 import MainPage from "./components/Pages/MainPage";

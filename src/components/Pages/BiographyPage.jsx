@@ -20,11 +20,19 @@ const BiographyPage = () => {
         <div className={styles.articleBorder}>
           <article className={styles.article}>
             {renderWithBreaks(t.text)}
-            <a href="https://rahmaninovschool.spb.ru" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://rahmaninovschool.spb.ru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {t.rahmaninovLink}
             </a>
             {t.text2}
-            <a href="https://youtu.be/yzuiKpUkAjA" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://youtu.be/yzuiKpUkAjA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {t.queenOfSpades}
             </a>
             {t.text3}
@@ -40,7 +48,11 @@ const BiographyPage = () => {
               {t.hallLink}
             </a>
             {t.text5}
-            <a href="https://gbarra.ru" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gbarra.ru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {t.gracieLink}
             </a>
             {renderWithBreaks(t.text6)}

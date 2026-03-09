@@ -14,7 +14,10 @@ const BurgerMenu = ({ isOpen, setMenuState }) => {
   }
 
   return (
-    <div className={classes.join(" ")} onClick={() => setMenuState((prev) => !prev)}>
+    <div
+      className={classes.join(" ")}
+      onClick={() => setMenuState((prev) => !prev)}
+    >
       <div className={styles["burger-menu-line"]}></div>
       <div className={styles["burger-menu-line"]}></div>
       <div className={styles["burger-menu-line"]}></div>

@@ -11,7 +11,11 @@ const ResumePage = () => {
         <div className={styles.articleBorder}>
           <article className={styles.article}>
             {t.education} <br />
-            <a href="https://rahmaninovschool.spb.ru" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://rahmaninovschool.spb.ru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               СПб ГБУ ДО "Санкт-Петербургская детская школа искусств им.
               С.В.Рахманинова"
             </a>{" "}
@@ -22,7 +26,11 @@ const ResumePage = () => {
         <div className={styles.articleBorder}>
           <article className={styles.article}>
             {t.education} <br />
-            <a href="https://spbdshi3.ru/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://spbdshi3.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               СПб ГБУ ДО "Санкт-Петербургская детская школа искусств N 3"
             </a>{" "}
             <br /> {t.untilNow}
