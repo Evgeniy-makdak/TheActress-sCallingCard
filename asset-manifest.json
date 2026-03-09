@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.275ac44f.css",
-    "main.js": "./static/js/main.a4b9b888.js",
+    "main.css": "./static/css/main.6c1a25fb.css",
+    "main.js": "./static/js/main.348a17f8.js",
     "static/media/mainphoto.png": "./static/media/mainphoto.6c3f4cf607b945b15155.png",
     "static/media/TheLittleWitch.png": "./static/media/TheLittleWitch.3ef5b5c2d3a5b683c4f6.png",
     "static/media/Prayer.png": "./static/media/Prayer.0ba25a935edad78f92d4.png",
     "static/media/placesInSoty.png": "./static/media/placesInSoty.adedbef3979df1061f81.png",
+    "static/media/videoPage.jpg": "./static/media/videoPage.2aaf87388d32d17c4fb5.jpg",
     "static/media/contacts.jpg": "./static/media/contacts.513d205c0121e05292ae.jpg",
     "static/media/TheQueenOfSpades.jpg": "./static/media/TheQueenOfSpades.a3ed6958b8ffc573c48f.jpg",
     "static/media/resume.jpg": "./static/media/resume.75c2798eaa464b0d5d22.jpg",
     "static/media/byography.jpg": "./static/media/byography.c40d1defdddd53da72d7.jpg",
     "static/media/portfolio.jpg": "./static/media/portfolio.39d2f577b41bcf8d91aa.jpg",
     "index.html": "./index.html",
-    "main.275ac44f.css.map": "./static/css/main.275ac44f.css.map",
-    "main.a4b9b888.js.map": "./static/js/main.a4b9b888.js.map"
+    "main.6c1a25fb.css.map": "./static/css/main.6c1a25fb.css.map",
+    "main.348a17f8.js.map": "./static/js/main.348a17f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.275ac44f.css",
-    "static/js/main.a4b9b888.js"
+    "static/css/main.6c1a25fb.css",
+    "static/js/main.348a17f8.js"
   ]
 }
