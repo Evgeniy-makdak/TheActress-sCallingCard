@@ -34,6 +34,7 @@ const VideoPage = () => {
   const t = translations[language].videoPage;
   const slideHeight = useSlideHeight();
   const wrapperRef = useRef(null);
+  const viewportRef = useRef(null);
   const dragStartY = useRef(0);
   const isDragging = useRef(false);
 
@@ -131,6 +132,14 @@ const VideoPage = () => {
       document.removeEventListener("pointerup", handleGlobalPointerUp);
   }, []);
 
+  useEffect(() => {
+    const el = viewportRef.current;
+    if (!el) return;
+    const preventTouch = (e) => e.preventDefault();
+    el.addEventListener("touchmove", preventTouch, { passive: false });
+    return () => el.removeEventListener("touchmove", preventTouch);
+  }, []);
+
   const getSlideStyle = useCallback(
     (index) => {
       const distance = Math.abs(index - selectedIndex);
@@ -157,6 +166,7 @@ const VideoPage = () => {
             ▲
           </button>
           <div
+            ref={viewportRef}
             className={styles.carouselViewport}
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}
