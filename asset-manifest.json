@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.6c1a25fb.css",
-    "main.js": "./static/js/main.348a17f8.js",
-    "static/media/mainphoto.png": "./static/media/mainphoto.6c3f4cf607b945b15155.png",
-    "static/media/TheLittleWitch.png": "./static/media/TheLittleWitch.3ef5b5c2d3a5b683c4f6.png",
-    "static/media/Prayer.png": "./static/media/Prayer.0ba25a935edad78f92d4.png",
-    "static/media/placesInSoty.png": "./static/media/placesInSoty.adedbef3979df1061f81.png",
-    "static/media/videoPage.jpg": "./static/media/videoPage.2aaf87388d32d17c4fb5.jpg",
-    "static/media/contacts.jpg": "./static/media/contacts.513d205c0121e05292ae.jpg",
-    "static/media/TheQueenOfSpades.jpg": "./static/media/TheQueenOfSpades.a3ed6958b8ffc573c48f.jpg",
-    "static/media/resume.jpg": "./static/media/resume.75c2798eaa464b0d5d22.jpg",
-    "static/media/byography.jpg": "./static/media/byography.c40d1defdddd53da72d7.jpg",
-    "static/media/portfolio.jpg": "./static/media/portfolio.39d2f577b41bcf8d91aa.jpg",
+    "main.css": "./static/css/main.b35fb7ce.css",
+    "main.js": "./static/js/main.505a8f70.js",
+    "static/media/mainphoto.png": "./static/media/mainphoto.a3b841c1c0572df9db66.png",
+    "static/media/TheQueenOfSpades.jpg": "./static/media/TheQueenOfSpades.f346ceca0c330aa63828.jpg",
+    "static/media/videoPage.jpg": "./static/media/videoPage.0ab66c47bbf335a79c57.jpg",
+    "static/media/contacts.jpg": "./static/media/contacts.585bc8fca1c46c3009e9.jpg",
+    "static/media/resume.jpg": "./static/media/resume.12b61abafe7607136e04.jpg",
+    "static/media/byography.jpg": "./static/media/byography.4d9f67fc8c3ae0d9edb7.jpg",
+    "static/media/TheLittleWitch.jpg": "./static/media/TheLittleWitch.adcb2eec45944655a466.jpg",
+    "static/media/portfolio.jpg": "./static/media/portfolio.8b3c7871d4e7f8e83275.jpg",
+    "static/media/placesInSoty.jpg": "./static/media/placesInSoty.ff752305acbef1b8ab7f.jpg",
+    "static/media/Prayer.jpg": "./static/media/Prayer.5e7d114092576e1169b7.jpg",
     "index.html": "./index.html",
-    "main.6c1a25fb.css.map": "./static/css/main.6c1a25fb.css.map",
-    "main.348a17f8.js.map": "./static/js/main.348a17f8.js.map"
+    "main.b35fb7ce.css.map": "./static/css/main.b35fb7ce.css.map",
+    "main.505a8f70.js.map": "./static/js/main.505a8f70.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c1a25fb.css",
-    "static/js/main.348a17f8.js"
+    "static/css/main.b35fb7ce.css",
+    "static/js/main.505a8f70.js"
   ]
 }
