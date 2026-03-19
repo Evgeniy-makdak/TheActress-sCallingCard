@@ -2,8 +2,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./styles/VideoPage.module.css";
 import videoPageImage from "../../assets/images/videoPage.jpg";
 import thumbnailQueenOfSpades from "../../assets/images/TheQueenOfSpades.jpg";
-import thumbnailPrayer from "../../assets/images/Prayer.png";
-import thumbnailLittleWitch from "../../assets/images/TheLittleWitch.png";
+import thumbnailPrayer from "../../assets/images/Prayer.jpg";
+import thumbnailLittleWitch from "../../assets/images/TheLittleWitch.jpg";
 import { useLanguage, translations } from "../../context/LanguageContext";
 
 const SLIDE_HEIGHT_DESKTOP = 220;

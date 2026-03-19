@@ -1,6 +1,6 @@
 import styles from "./styles/BiographyPage.module.css";
 import biographyImage from "../../assets/images/byography.jpg";
-import placesInSoty from "../../assets/images/placesInSoty.png";
+import placesInSoty from "../../assets/images/placesInSoty.jpg";
 import { useLanguage, translations } from "../../context/LanguageContext";
 
 const renderWithBreaks = (str) =>
